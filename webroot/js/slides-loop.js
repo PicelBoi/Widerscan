@@ -9,6 +9,7 @@ var maindiv = {
 	"localDoppler":".radar-slide",
 	"regionalSatellite":".radar-slide",
 	"bulletin":".bulletin",
+	"picelboi":".kirby",
 	//City Info
 	"cityIntro":".city-slide-intro",
 	"currentConditions":".city-info-slide",
@@ -306,7 +307,7 @@ var mainMap
 					setTimeout(function() {
 						$('.city-slide-intro .weatherscancopyright .copyrighttext').fadeOut(500).promise().done(function(){
 							$('.city-slide-intro .weatherscancopyright .copyrighttext').css('font-size','15px')
-							$('.city-slide-intro .weatherscancopyright .copyrighttext').text(`© ${new Date().getFullYear()} Weather Group Television LLC All Rights Reserved. Thanks to Dorian for requesting this idea!`)
+							$('.city-slide-intro .weatherscancopyright .copyrighttext').text(`© ${new Date().getFullYear()} All rights reserved to their rightful owners.`)
 							$('.city-slide-intro .weatherscancopyright .copyrighttext').fadeIn(500);
 						});
 					}, 5000);
@@ -317,7 +318,7 @@ var mainMap
 						$('.city-slide-intro .cityweatherscanmarquee').fadeOut(500).promise().done(function(){
 							$('.city-slide-intro').fadeOut(0);
 							$('.city-slide-intro .weatherscancopyright .copyrighttext').css('font-size','28px')
-							$('.city-slide-intro .weatherscancopyright .copyrighttext').text("Weatherscan is brought to you by The Weather Channel® and PicelBoi Productions. We bring you this special 16:9 broadcast!")
+							$('.city-slide-intro .weatherscancopyright .copyrighttext').text("Weirderscan is brought to you by The PicelBoi Channel®<br> and Waddle Dee Communications. Find out more by going to https://github.com/PicelBoi/Weirderscan.")
 							wait(0);
 						});
 					}, 10000);
@@ -1687,7 +1688,7 @@ var mainMap
 		}
 
 		function resizeText(text){
-			var s = 52,
+			var s = 42,
 				$container = $('.info-slide-content.forecast .content'),
 				$test = $('<div style="position:absolute;top:100%;"></div>') .appendTo($container) .css('font-size', s + 'px') .css('line-height', '125%') .html(text);
 

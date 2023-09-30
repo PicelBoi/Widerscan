@@ -5881,7 +5881,7 @@ label{
 #city {
   font-family: Interstate;
   font-weight: 300;
-  font-size: 45.5px;
+  font-size: 35.5px;
   padding-top: 10px;
   position: absolute;
   text-align: left;
@@ -5889,7 +5889,7 @@ label{
   width: 311px;
   height: 92px;
   top: 283.5px;
-  left: -0.5%;
+  left: 3.5%;
   line-height: 110%;
   display: flex;
   align-items: center;

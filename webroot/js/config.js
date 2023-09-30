@@ -90,12 +90,12 @@ var locationSettings = {
   mainLocation:{
     displayName:"Tokyo",//Name that will show up on the sim.
     searchQuery:{ //Type and val are required fields for search to work. Will be overridden if location is given in URL.
-      type:"city",//Leave type blank to use automatic search. "geocode", "state", "district", "city", "locality", "neighborhood", "postal" (zipcode), "address", "poi", "pws" (personal weatherstation) //If geocode is used all otherfields but val will be ignored.
+      type:"geocode",//Leave type blank to use automatic search. "geocode", "state", "district", "city", "locality", "neighborhood", "postal" (zipcode), "address", "poi", "pws" (personal weatherstation) //If geocode is used all otherfields but val will be ignored.
       fuzzy:true, //Attempt approximate search.
       country:"JP", //Two letter country code. //Recommend using "US".
       state:"", //Two letter state code.
       val:"35.652832,139.839478", //for geocode "lat,lon"
-      searchResultNum:1,//Defaults to 0. Use if the first result for a particular location sucks.
+      searchResultNum:0,//Defaults to 0. Use if the first result for a particular location sucks.
     }
   },
   extraLocations: {

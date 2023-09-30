@@ -5889,13 +5889,12 @@ label{
   width: 311px;
   height: 92px;
   top: 283.5px;
-  left: 3.5%;
+  left: -0.5%;
   line-height: 110%;
   display: flex;
   align-items: center;
   transform: scale(103%,100%);
   transform-origin: left;
-  text-transform: lowercase;
 }
 
 #current-conditions {

@@ -88,13 +88,13 @@ var audioSettings = {
 }
 var locationSettings = {
   mainLocation:{
-    displayName:"",//Name that will show up on the sim.
+    displayName:"Tokyo",//Name that will show up on the sim.
     searchQuery:{ //Type and val are required fields for search to work. Will be overridden if location is given in URL.
       type:"",//Leave type blank to use automatic search. "geocode", "state", "district", "city", "locality", "neighborhood", "postal" (zipcode), "address", "poi", "pws" (personal weatherstation) //If geocode is used all otherfields but val will be ignored.
       fuzzy:true, //Attempt approximate search.
-      country:"US", //Two letter country code. //Recommend using "US".
+      country:"JP", //Two letter country code. //Recommend using "US".
       state:"", //Two letter state code.
-      val:"", //for geocode "lat,lon"
+      val:"35.652832,139.839478", //for geocode "lat,lon"
       searchResultNum:2,//Defaults to 0. Use if the first result for a particular location sucks.
     }
   },
